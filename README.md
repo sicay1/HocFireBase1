@@ -62,18 +62,19 @@ apply plugin: 'com.google.gms.google-services' //this line
 pubspec.yaml
   firebase_core, firebase_database
   
-  
-```flutter  
+---
+
+`dart  
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
 }
-```
+`
 
+---
 
-
-```flutter
+`dart
 class _MyHomePageState extends State<MyHomePage> {
   final fb = FirebaseDatabase.instance;
   final myController = TextEditingController();
@@ -113,11 +114,11 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 }
-```
+`
 
+---
 
-
-```flutter
+`dart
 var retrievedName;          
 
             RaisedButton(
@@ -133,7 +134,7 @@ var retrievedName;
               child: Text("Get"),
             ),
             Text(retrievedName ?? "name"),
-```
+`
 
 
 
