@@ -9,7 +9,7 @@ create project
 flutter create HocFireBase1
 ```
 
-FIREBASE create android app with "package name"
+[Firebase console] create android app with "package name"
 get "package name" from:
 *android\app\src\main\AndroidManifest.xml*
 ```xml
