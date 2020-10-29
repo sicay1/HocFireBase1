@@ -5,7 +5,9 @@ A new Flutter project.
 ## Getting Started
 
 create project
+```cmd
 flutter create HocFireBase1
+```
 
 FIREBASE create android app with "package name"
 get "package name" from:
