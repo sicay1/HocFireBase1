@@ -24,7 +24,7 @@ android/app/
 
 edit
 ***android/build.gradle***
-`config
+```config
 buildscript {
   repositories {
     // Check that you have the following line (if not, add it):
@@ -45,7 +45,7 @@ allprojects {
     ...
   }
 }
-`
+```
 
 
 
