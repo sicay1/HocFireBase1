@@ -9,7 +9,7 @@ create project
 flutter create HocFireBase1
 ```
 
-[Firebase console] create android app with "package name"
+[Firebase console](https://console.firebase.google.com/) create android app with "package name"
 get "package name" from:
 *android\app\src\main\AndroidManifest.xml*
 ```xml
@@ -18,13 +18,13 @@ package="com.example.HocFireBase1">
 ```
 
 
-Firebase download Android config file google-services.json and put into
+[Firebase console](https://console.firebase.google.com/) download Android config file google-services.json and put into
 android/app/
 
 
 edit
 ***android/build.gradle***
-```config
+`config
 buildscript {
   repositories {
     // Check that you have the following line (if not, add it):
@@ -45,7 +45,7 @@ allprojects {
     ...
   }
 }
-```
+`
 
 
 
