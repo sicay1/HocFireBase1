@@ -10,16 +10,16 @@ flutter create HocFireBase1
 ```
 
 [Firebase console](https://console.firebase.google.com/) create android app with "package name"
-get "package name" from:
-*android\app\src\main\AndroidManifest.xml*
+--> get "package name" from:
+***android\app\src\main\AndroidManifest.xml***
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.HocFireBase1">
 ```
 
 
-[Firebase console](https://console.firebase.google.com/) download Android config file google-services.json and put into
-android/app/
+[Firebase console](https://console.firebase.google.com/) download Android config file ***google-services.json*** and put into
+***android/app/***
 
 
 edit
