@@ -23,7 +23,7 @@ android/app/
 
 
 edit
-*android/build.gradle*
+***android/build.gradle***
 ```config
 buildscript {
   repositories {
@@ -51,7 +51,7 @@ allprojects {
 
 
 edit
-*android\app\build.gradle*
+***android\app\build.gradle***
 ```config
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
