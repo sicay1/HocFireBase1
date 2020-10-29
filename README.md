@@ -9,7 +9,7 @@ flutter create HocFireBase1
 
 FIREBASE create android app with "package name"
 get "package name" from:
-android\app\src\main\AndroidManifest.xml:
+*android\app\src\main\AndroidManifest.xml*
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.HocFireBase1">
@@ -21,7 +21,7 @@ android/app/
 
 
 edit
-android/build.gradle
+*android/build.gradle*
 ```config
 buildscript {
   repositories {
@@ -49,7 +49,7 @@ allprojects {
 
 
 edit
-android\app\build.gradle
+*android\app\build.gradle*
 ```config
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
