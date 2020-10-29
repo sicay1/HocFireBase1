@@ -22,6 +22,7 @@ android/app/
 
 edit
 android/build.gradle
+```config
 buildscript {
   repositories {
     // Check that you have the following line (if not, add it):
@@ -42,34 +43,35 @@ allprojects {
     ...
   }
 }
-
+```
 
 
 
 
 edit
 android\app\build.gradle
+```config
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services' //this line
-
+```
 
 
 pubspec.yaml
   firebase_core, firebase_database
   
   
-  
+```flutter  
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
 }
+```
 
 
 
-
-
+```flutter
 class _MyHomePageState extends State<MyHomePage> {
   final fb = FirebaseDatabase.instance;
   final myController = TextEditingController();
@@ -109,11 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 }
+```
 
 
 
-
-
+```flutter
 var retrievedName;          
 
             RaisedButton(
@@ -129,7 +131,7 @@ var retrievedName;
               child: Text("Get"),
             ),
             Text(retrievedName ?? "name"),
-
+```
 
 
 
