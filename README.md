@@ -4,24 +4,24 @@ A new Flutter project.
 
 ## Getting Started
 
-create project
+### Create project
+
 flutter create HocFireBase1
 
-FIREBASE create android app with "package name"
-get "package name" from:
-android\app\src\main\AndroidManifest.xml:
+### Firebase create android app with "package name"
+
+- Get "package name in HocFireBase1 Project path: *Android\app\src\main\AndroidManifest.xml*
+
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.HocFireBase1">
 ```
 
+- Download Android config file *google-services.json* and put into *android/app/*
 
-Firebase download Android config file google-services.json and put into
-android/app/
+### Edit android/build.gradle
 
-
-edit
-android/build.gradle
+```config
 buildscript {
   repositories {
     // Check that you have the following line (if not, add it):
@@ -42,34 +42,29 @@ allprojects {
     ...
   }
 }
+```
 
+### Edit android\app\build.gradle
 
-
-
-
-edit
-android\app\build.gradle
+```config
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services' //this line
+```
 
+- add package in pubspec.yaml
+-- firebase_core
+-- firebase_database
 
-
-pubspec.yaml
-  firebase_core, firebase_database
-  
-  
-  
+```dart
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
 }
+```
 
-
-
-
-
+```dart
 class _MyHomePageState extends State<MyHomePage> {
   final fb = FirebaseDatabase.instance;
   final myController = TextEditingController();
@@ -109,12 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 }
+```
 
-
-
-
-
-var retrievedName;          
+```dart
+var retrievedName;
 
             RaisedButton(
               onPressed: () {
@@ -130,13 +123,4 @@ var retrievedName;
             ),
             Text(retrievedName ?? "name"),
 
-
-
-
-
-
-
-
-
-
-
+```
