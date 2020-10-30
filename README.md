@@ -6,7 +6,9 @@ A new Flutter project.
 
 ### Create project
 
+```bash
 flutter create HocFireBase1
+```
 
 ### Firebase create android app with "package name"
 

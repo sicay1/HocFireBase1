@@ -11,6 +11,7 @@ Future<void> main() async {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  // add some comment
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -80,7 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 
-
   void loadCounterOnFirebase(DataSnapshot fbData) {
     if (fbData.value != null) {
       // setState(() {
@@ -100,9 +100,8 @@ class _MyHomePageState extends State<MyHomePage> {
         setState(() {
           _counter = data.value;
           firstStartUp = false;
-          ref.child("Name").once().then((DataSnapshot data1){
-            if(data1.value != null)
-              retrievedName = data1.value;
+          ref.child("Name").once().then((DataSnapshot data1) {
+            if (data1.value != null) retrievedName = data1.value;
           });
         });
       }
