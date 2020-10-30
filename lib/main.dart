@@ -1,6 +1,9 @@
+import 'package:HocFireBase1/sign_in.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+
+import 'first_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -143,6 +146,46 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text("Get"),
             ),
             Text('$retrievedName'),
+            SizedBox(),
+            OutlineButton(
+              splashColor: Colors.grey,
+              onPressed: () {
+                signInWithGoogle().then((result) {
+                  if (result != null) {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return FirstScreen();
+                        },
+                      ),
+                    );
+                  }
+                });
+              },
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+              highlightElevation: 0,
+              borderSide: BorderSide(color: Colors.grey),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Image(image: AssetImage("assets/google_logo.png"), height: 35.0),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Text(
+                        'Sign in with Google',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
