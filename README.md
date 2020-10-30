@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+## 1. Read, Write data to Firebase Database
 
 ### Create project
 
@@ -10,16 +10,17 @@ A new Flutter project.
 flutter create HocFireBase1
 ```
 
-### Firebase create android app with "package name"
+### Firebase
 
-- Get "package name in HocFireBase1 Project path: *Android\app\src\main\AndroidManifest.xml*
+- create android app with "package name"
+  - Get "package name" in HocFireBase1 Project path: **Android\app\src\main\AndroidManifest.xml**
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.HocFireBase1">
 ```
 
-- Download Android config file *google-services.json* and put into *android/app/*
+- Download Android config file *google-services.json* and put into **android/app/**
 
 ### Edit android/build.gradle
 
@@ -55,8 +56,8 @@ apply plugin: 'com.google.gms.google-services' //this line
 ```
 
 - add package in pubspec.yaml
--- firebase_core
--- firebase_database
+  - firebase_core
+  - firebase_database
 
 ```dart
 void main() async {
@@ -126,3 +127,7 @@ var retrievedName;
             Text(retrievedName ?? "name"),
 
 ```
+
+## 2. Firebase Auth with google signin
+
+f
