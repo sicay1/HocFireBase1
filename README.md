@@ -373,3 +373,4 @@ void signOutGoogle() async {
 - uninstall app and reinstall in device
 - run flutter clean to clean up build
 - check firebase make sure enabled google signin, real time database
+- check or add firebase authen app fingerprint SHA1
