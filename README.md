@@ -368,6 +368,8 @@ void signOutGoogle() async {
 
 ## 3. save firebase credential
 
+F:\AndroidStudio\jre\bin\keytool.exe -list -v -alias androiddebugkey -keystore C:\Users\admin\.android\debug.keystore
+
 ## 4. Troubleshooting
 
 - uninstall app and reinstall in device
